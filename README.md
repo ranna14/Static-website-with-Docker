@@ -1,36 +1,29 @@
-# Simple Static Website with Docker and Nginx
+# Static Website with Docker Volumes
 
 ## About This Project
-This project is a hands-on Docker practice that I built step by step to understand how containerization works in a real DevOps environment.
+This project is an enhancement of the previous project using **Docker Volumes**.  
+Instead of copying the website files into the Docker Image, here we link the website folder on the host machine directly to the container using a Volume.  
 
-I started from Ubuntu machine, installed Docker manually, created a simple static website, and containerized it using Nginx. All steps were done manually through the terminal.
+This allows any changes made to the files to appear immediately in the browser **without rebuilding the image**.
 
 ---
 
-## What I Did in This Project
-- Set up a new Ubuntu machine
-- Installed Docker from the official Docker repository
-- Created a simple static website using HTML
-- Used the official Nginx Docker image
-- Wrote a Dockerfile to copy the website into the container
-- Built the Docker image locally
-- Ran a Docker container and exposed it on port 80
-- Verified the website through the browser
+## What I Did
+- Used the same static website from the previous project
+- Created a new Docker Image without copying files into it
+- Used Docker Volume to link the website folder from the host to the container
+- Ran the container with Nginx to see live updates
+- Verified that any file changes appear immediately in the browser
 
 ---
 
 ## Technologies Used
 - Docker
 - Nginx
+- Docker Volumes / Bind Mount
 - HTML
 - Ubuntu Linux
 
 ---
 
 ## Project Structure
-```bash
-nginx-static/
-├── Dockerfile
-├── website/
-│   └── index.html
-└── README.md
