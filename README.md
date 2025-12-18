@@ -27,3 +27,8 @@ This allows any changes made to the files to appear immediately in the browser *
 ---
 
 ## Project Structure
+nginx-static/
+├── Dockerfile
+├── website/
+│   └── index.html
+└── README.md
