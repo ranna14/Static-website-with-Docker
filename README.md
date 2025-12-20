@@ -1,7 +1,7 @@
 # Simple Static Website with Docker and Nginx
 
 ## About This Project
-This project is a hands-on Docker practice that I built step by step to understand how containerization works in a real DevOps environment.
+This project is a hands-on Docker practice that I built step by step to understand how containerization works in environment.
 
 I started from Ubuntu machine, installed Docker manually, created a simple static website, and containerized it using Nginx. All steps were done manually through the terminal.
 
